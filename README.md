@@ -2,7 +2,7 @@
 
 App for converting images into text
 
-![alt text](https://github.com/DKusarek/notes-conventer/tree/master/src/assets/demo.jpg?raw=true)
+![Demo](https://github.com/DKusarek/notes-conventer/blob/master/src/assets/demo.PNG)
 
 ## Development server
 
