@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="jumbotron">
+        <h4>Notes Converter</h4>
+        <hr>
+        <p>You can upload here photo of your notes, and convert them to text</p>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input class="btn btn-light" type="file" id="img" name="img" accept="image/*" (change)="fileChange($event)">
+            <input type="checkbox" id="checkbox"><label for="checkbox" class="checkbox-label" [(ngModel)]="handwritten" name="checkbox-label" ngDefaultControl>Handwritten</label>
+            <button class="btn btn-primary" (click)="convert()">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" [ngClass]="{'hide': !loading }"></span>
+                Convert
+            </button>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-12">
+            <textarea id="result" style="width: 100%; min-height: 300px;" [(ngModel)]="text"></textarea>
+        </div>
+    </div>
+</div>
